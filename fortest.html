@@ -4,19 +4,23 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Vicioustore - Layanan Premium Super Murah</title>
+    <meta name="description"
+        content="Selamat datang di Vicioustore, destinasi utama Anda untuk hiburan digital terjangkau. Jelajahi layanan premium dengan harga terbaik, termasuk penawaran istimewa untuk Netflix, Youtube Premium, Spotify, dan Disney Plus. Nikmati juga top-up game murah untuk Mobile Legends, Genshin Impact, dan Valorant. Temukan keseruan tanpa batas di Vicioustore!">
+    <meta name="google-site-verification" content="your-unique-code-here">
+    <title>Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah</title>
+    <meta name="robots" content="noindex,nofollow">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.js">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
 </head>
 
 <body>
@@ -24,7 +28,7 @@
     <div class="container-fluid px-0">
         <nav class="navbar navbar-expand-sm navbar-dark bg-black py-0 px-0 fixed-top">
             <a class="navbar-brand" href="index.html"><img id="logo" src="Assets/Logo-Full.png"
-                    alt="Vicioustore - Layanan Premium Super Murah">
+                    alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah">
             </a>
             <span class="v-line"></span>
             <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -40,226 +44,117 @@
                         <a class="nav-link" href="#">Top Up Game</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="TentangKami.html">Tentang Kami</a>
+                        <a class="nav-link" href="#">Tentang Kami</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="FAQ.html">F.A.Q</a>
+                        <a class="nav-link" href="#">F.A.Q</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
 
-    <!-- FAQ -->
-    <div class="faq-header">Frequently Asked Questions</div>
 
-    <div class="faq-content">
-        <!-- Pertanyaan Umum Sections -->
-        <div class="faq-h2">Pertanyaan Umum</div>
-        <div class="faq-question">
-            <input id="q1" type="checkbox" class="panel">
-            <div class="plus">+</div>
-            <label for="q1" class="panel-title">Apa itu Vicioustore?</label>
-            <div class="panel-content">
-                Vicioustore adalah platform yang menyediakan berbagai layanan hiburan digital, termasuk langganan untuk
-                platform streaming seperti Netflix, YouTube Premium, Spotify Premium, Disney Plus, dan juga layanan top
-                up untuk game seperti Mobile Legends, Genshin Impact, dan Valorant.
+    <!-- Homepage Banner -->
+    <div class="banner">
+        <div class="banner-inner">
+            <div class="banner-item">
+                <a href="#"><img src="/Assets/Home-Banner/banner.webp"
+                        alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah"></a>
+            </div>
+            <div class="banner-item">
+                <a href="#"><img src="/Assets/Home-Banner/banner2.webp"
+                        alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah"></a>
+            </div>
+            <div class="banner-item">
+                <a href="#"><img src="/Assets/Home-Banner/banner3.webp"
+                        alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah"></a>
+            </div>
+            <!-- Add more carousel items as needed -->
+        </div>
+
+        <ul class="banner-indicators">
+            <li class="indicator active" onclick="goToSlide(0)"></li>
+            <li class="indicator" onclick="goToSlide(1)"></li>
+            <li class="indicator" onclick="goToSlide(2)"></li>
+            <!-- Add more indicators as needed -->
+        </ul>
+
+        <div class="banner-controls">
+            <button class="banner-control" onclick="prevSlide()">&#8249;</button>
+            <button class="banner-control" onclick="nextSlide()">&#8250;</button>
+        </div>
+    </div>
+
+    <!-- Carousel Produk Populer -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Produk &nbsp;<b>Populer</b></h2>
+                <div id="myCarousel1" class="carousel slide" data-ride="carousel" data-interval="0">
+                    <!-- Wrapper for carousel items -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="/Assets/Products/Mobile Legends/Prize1.webp" class="img-fluid"
+                                                alt="Top Up Mobile Legends Murah">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>304 Diamonds</h4>
+                                            <a href="#" class="short-link">
+                                                <p>Mobile Legends</p>
+                                            </a>
+                                            <p class="normal-price"><span>RP 78.000</span></p>
+                                            <a href="#" class="btn btn-primary" data-toggle="modal"
+                                                data-target="#exampleModal" data-whatever="@mdo">Beli Sekarang</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel controls -->
+                    <a class="carousel-control-prev" href="#myCarousel1" data-slide="prev">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel1" data-slide="next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
             </div>
         </div>
+    </div>
 
-        <div class="faq-question">
-            <input id="q2" type="checkbox" class="panel">
-            <div class="plus">+</div>
-            <label for="q2" class="panel-title">Bagaimana Cara Saya Membeli Produk di Vicioustore?</label>
-            <div class="panel-content">
-                Anda dapat membeli produk di Vicioustore dengan memilih produk yang diinginkan atau bisa langsung order
-                melalui
-                <a href="https://wa.me/6287887055203" target="_blank">
-                    Whatsapp kami di 0878-8705-5203
-                </a>
-            </div>
-        </div>
-
-        <div class="faq-question">
-            <input id="q3" type="checkbox" class="panel">
-            <div class="plus">+</div>
-            <label for="q3" class="panel-title">Produk apa aja yang dijual oleh Vicioustore?</label>
-            <div class="panel-content">
-                Layanan Streaming / Media:
-                <li>Netflix (Private & Sharing)</li>
-                <li>Youtube Premium</li>
-                <li>Spotify Premium</li>
-                <li>Disney Plus</li>
-                <br>
-                Top Up Game:
-                <li>Top Up Mobile Legends</li>
-                <li>Top Up Genshin Impact</li>
-                <li>Top Up Valorant</li>
-            </div>
-        </div>
-
-        <div class="faq-question">
-            <input id="q4" type="checkbox" class="panel">
-            <div class="plus">+</div>
-            <label for="q4" class="panel-title">Apakah semua yang dijual oleh Vicioustore aman?</label>
-            <div class="panel-content">Semua yang kami jual adalah produk yang aman, tidak menggunakan teknik seperti
-                carding, hacking, aplikasi ilegal, semua produk menggunakan pembayaran yang sah.</div>
-        </div>
-
-        <div class="faq-question">
-            <input id="q5" type="checkbox" class="panel">
-            <div class="plus">+</div>
-            <label for="q5" class="panel-title">Bagaimana Saya Dapat Mengakses Langganan yang Saya Beli?</label>
-            <div class="panel-content">Setelah pembelian berhasil, Anda akan menerima panduan langkah-langkah untuk
-                mengakses langganan atau top up game yang Anda beli melalui chat Whatsapp.</div>
-        </div>
-
-        <div class="faq-question">
-            <input id="q6" type="checkbox" class="panel">
-            <div class="plus">+</div>
-            <label for="q6" class="panel-title">Apakah Harga di Vicioustore Termasuk Pajak atau Biaya Tambahan
-                Lainnya?</label>
-            <div class="panel-content">Harga yang tertera di situs web Vicioustore adalah harga final tanpa biaya
-                tersembunyi. Pajak atau biaya tambahan lainnya sudah termasuk dalam harga yang tercantum.</div>
-        </div>
-
-        <div class="faq-question">
-            <input id="q7" type="checkbox" class="panel">
-            <div class="plus">+</div>
-            <label for="q7" class="panel-title">Bagaimana Proses Pengembalian Produk di Vicioustore?</label>
-            <div class="panel-content">Kami tidak menerima pengembalian untuk produk digital yang sudah dibeli. Pastikan
-                untuk memeriksa dengan cermat sebelum melakukan pembelian.
-            </div>
-        </div>
-
-        <div class="faq-question">
-            <input id="q8" type="checkbox" class="panel">
-            <div class="plus">+</div>
-            <label for="q8" class="panel-title">Bagaimana Jika Saya Mengalami Masalah dengan Produk yang Saya
-                Beli?</label>
-            <div class="panel-content">Jika Anda mengalami masalah dengan produk yang Anda beli, hubungi Mincious di
-                social media kami
-                yang siap membantu Anda 24/7.
-            </div>
-        </div>
-
-        <div class="faq-question">
-            <input id="q9" type="checkbox" class="panel">
-            <div class="plus">+</div>
-            <label for="q9" class="panel-title">Apakah Vicioustore Menyediakan Pembayaran dengan Metode Selain Kartu
-                Kredit?</label>
-            <div class="panel-content">Ya, kami menyediakan pembayaran dengan menggunakan Emoney seperti Gopay, Ovo,
-                Dana, Shopeepay. Atau jika anda ingin transfer melalui bank bisa melalui BCA dan Mandiri.
-            </div>
-        </div>
-
-        <!-- Netflix Sections -->
-        <div class="faq-h2">Netflix</div>
-        <div class="faq-question">
-            <input id="q10" type="checkbox" class="panel">
-            <div class="plus">+</div>
-            <label for="q10" class="panel-title">Ada apa saja jenis netflix yang dijual di Vicioustore?</label>
-            <div class="panel-content">Untuk sekarang kami ada menyediakan 2 jenis untuk akun netflix, yaitu Private dan
-                Sharing.
-            </div>
-        </div>
-
-        <div class="faq-question">
-            <input id="q11" type="checkbox" class="panel">
-            <div class="plus">+</div>
-            <label for="q11" class="panel-title">Apa perbedaan antara Sharing dan Private?</label>
-            <div class="panel-content">
-                Semua nya tetap menggunakan akun langsung dari kami<br>
-                Private:
-                <li>1 profile hanya ada 1 pengguna, cocok untuk yang tidak ingin kena screen limit.</li>
-                <br>
-                Sharing:
-                <li>1 profile bisa diisi oleh 2/3 pengguna, bisa berpotensi untuk kena screen limit.</li>
-            </div>
-        </div>
-
-        <div class="faq-question">
-            <input id="q12" type="checkbox" class="panel">
-            <div class="plus">+</div>
-            <label for="q12" class="panel-title">Apa itu screen limit netflix?</label>
-            <div class="panel-content">
-                Screen limit di Netflix merujuk pada jumlah maksimum perangkat yang dapat digunakan secara bersamaan
-                untuk menonton konten di akun Netflix yang sama.
-            </div>
-        </div>
-
-        <div class="faq-question">
-            <input id="q13" type="checkbox" class="panel">
-            <div class="plus">+</div>
-            <label for="q13" class="panel-title">[HANYA UNTUK AKUN SHARING] Apa yang harus saya lakukan jika terkena
-                screen limit?</label>
-            <div class="panel-content">
-                Anda bisa menunggu kurang lebih 30-60 menit, atau bisa menggunakan fitur Download. Atau jika mau anda
-                bisa upgrade ke Netflix - Private.
-            </div>
-        </div>
-
-        <div class="faq-question">
-            <input id="q14" type="checkbox" class="panel">
-            <div class="plus">+</div>
-            <label for="q14" class="panel-title">Apakah bisa digunakan untuk nonton di TV?</label>
-            <div class="panel-content">
-                Dengan adanya kebijakan NETFLIX yang baru, maka semua akun (Private / Sharing) tidak bisa menonton di TV
-                lagi.
-            </div>
-        </div>
-
-        <div class="faq-question">
-            <input id="q15" type="checkbox" class="panel">
-            <div class="plus">+</div>
-            <label for="q15" class="panel-title">Apakah bisa menggunakan akun sendiri?</label>
-            <div class="panel-content">Tidak, akun netflix yang dijual semua akan berasal dari kami.
-            </div>
-        </div>
-
-        <div class="faq-question">
-            <input id="q16" type="checkbox" class="panel">
-            <div class="plus">+</div>
-            <label for="q16" class="panel-title">Berapa Lama Proses Aktivasi Setelah Membeli Langganan Netflix?</label>
-            <div class="panel-content">Proses aktivasi biasanya dilakukan secara instan setelah pembayaran berhasil.
-                Anda dapat segera mulai menikmati layanan Netflix setelah menerima panduan aktivasi.
-            </div>
-        </div>
-
-        <div class="faq-question">
-            <input id="q17" type="checkbox" class="panel">
-            <div class="plus">+</div>
-            <label for="q17" class="panel-title">Bagaimana Saya Dapat Mengakses Akun Netflix yang Sudah Dibeli?</label>
-            <div class="panel-content">Setelah pembelian berhasil, Anda akan menerima detail akun Netflix yang sudah
-                dibeli.
-            </div>
-        </div>
-
-        <div class="faq-question">
-            <input id="q18" type="checkbox" class="panel">
-            <div class="plus">+</div>
-            <label for="q18" class="panel-title">Apakah Vicioustore Memberikan Garansi untuk Produk Netflix yang
-                Dibeli?</label>
-            <div class="panel-content">Ya, Vicioustore memberikan garansi bahwa langganan Netflix yang Anda beli melalui
-                platform kami adalah sah dan dapat digunakan sesuai dengan panduan yang diberikan.
-            </div>
-        </div>
-
-        <div class="faq-question">
-            <input id="q19" type="checkbox" class="panel">
-            <div class="plus">+</div>
-            <label for="q19" class="panel-title">[HANYA UNTUK AKUN SHARING]Apakah screen limit termasuk kedalam error
-                dan berhak untuk di refund?</label>
-            <div class="panel-content">Screen limit bukan merupakan error, melainkan fitur dari NETFLIX itu sendiri,
-                harap BACA untuk syarat dan ketentuan produk NETFLIX kami, MEMBELI = SETUJU.
-            </div>
-        </div>
-
-        <div class="faq-question">
-            <input id="q20" type="checkbox" class="panel">
-            <div class="plus">+</div>
-            <label for="q20" class="panel-title">[HANYA UNTUK AKUN SHARING]Jika akun dari Vicioustore akankah ada kemungkinan saya terlog out dari akun?</label>
-            <div class="panel-content">Ada kemungkinan hal ini bisa terjadi, tapi tenang saja, andah anya perlu log in lagi untuk menikmati kembali.
+    <!-- Buy Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="purchase()">Send message</button>
+                </div>
             </div>
         </div>
     </div>
@@ -277,19 +172,24 @@
             <!-- Right -->
             <div>
                 <a href="https://wa.me/6287887055203" target="_blank" class="me-4 link-secondary footer-follow">
-                    <img src="/Assets/Footer/WA.svg" alt="">
+                    <img src="/Assets/Footer/WA.svg"
+                        alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah">
                 </a>
                 <a href="" class="me-4 link-secondary footer-follow">
-                    <img src="/Assets/Footer/google.svg" alt="">
+                    <img src="/Assets/Footer/google.svg"
+                        alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah">
                 </a>
                 <a href="" class="me-4 link-secondary footer-follow">
-                    <img src="/Assets/Footer/x.svg" alt="">
+                    <img src="/Assets/Footer/x.svg"
+                        alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah">
                 </a>
                 <a href="" class="me-4 link-secondary footer-follow">
-                    <img src="/Assets/Footer/fb.svg" alt="">
+                    <img src="/Assets/Footer/fb.svg"
+                        alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah">
                 </a>
                 <a href="" class="me-4 link-secondary footer-follow">
-                    <img src="/Assets/Footer/tiktok.svg" alt="">
+                    <img src="/Assets/Footer/tiktok.svg"
+                        alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah">
                 </a>
             </div>
             <!-- Right -->
@@ -305,7 +205,9 @@
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <!-- Content -->
                         <h6 class="text-uppercase fw-bold mb-4">
-                            <img src="/Assets/Logo-Full.png" alt="" style="width: 200px;">
+                            <img src="/Assets/Logo-Full.png"
+                                alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah"
+                                style="width: 200px;">
                         </h6>
                         <p>
                             Vicioustore - Destinasi Utama Hiburan Anda! Temukan berbagai layanan kami mulai dari
@@ -361,10 +263,13 @@
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">Hubungi Kami</h6>
                         <p style="display: inline;">
-                            <img src="/Assets/Footer/mail.svg" alt="" style="width: 30px; height: auto;">
+                            <img src="/Assets/Footer/mail.svg"
+                                alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah"
+                                style="width: 30px; height: auto;">
                             vicioustore96@gmail.com
                         </p>
-                        <p style="margin: 20px;"><img src="/Assets/Footer/WA.svg" alt=""
+                        <p style="margin: 20px;"><img src="/Assets/Footer/WA.svg"
+                                alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah"
                                 style="width: 30px; height: auto;"> +62 878-8705-5203</p>
                     </div>
                     <!-- Grid column -->
@@ -381,6 +286,58 @@
         </div>
         <!-- Copyright -->
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- FOR SCRIPT CODES -->
+    <script>
+        // SCRIPT FOR HOMEPAGE BANNER
+        let currentIndex = 0;
+
+        function nextSlide() {
+            const carouselInner = document.querySelector('.banner-inner');
+            const totalSlides = document.querySelectorAll('.banner-item').length;
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateCarousel();
+        }
+
+        function prevSlide() {
+            const carouselInner = document.querySelector('.banner-inner');
+            const totalSlides = document.querySelectorAll('.banner-item').length;
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        }
+
+        function goToSlide(index) {
+            currentIndex = index;
+            updateCarousel();
+        }
+
+        function updateCarousel() {
+            const carouselInner = document.querySelector('.banner-inner');
+            const totalSlides = document.querySelectorAll('.banner-item').length;
+            const translateValue = -currentIndex * 100 + '%';
+            carouselInner.style.transform = 'translateX(' + translateValue + ')';
+
+            // Update indicators
+            const indicators = document.querySelectorAll('.indicator');
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+
+        function purchase() {
+            // Add your logic for handling the purchase, e.g., sending WhatsApp message
+            alert('Purchase successful!'); // Replace with your logic
+        }
+
+    </script>
+
 </body>
 
 </html>
