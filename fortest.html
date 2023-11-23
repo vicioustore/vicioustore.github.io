@@ -46,20 +46,47 @@
                         <a class="nav-link" href="TentangKami.html">Tentang Kami</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="FAQ.html">F.A.Q</a>
+                        <a class="nav-link" href="#">F.A.Q</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
 
-    <!-- add new comment -->
 
-    <!-- DETAIL CONTAIN -->
-    <div class="container mt-5 product-list-container product-title">
-        <h2>Produk <b>Media & Streaming</b></h2>
+    <!-- Homepage Banner -->
+    <div class="banner">
+        <div class="banner-inner">
+            <div class="banner-item">
+                <a href="#"><img src="/Assets/Home-Banner/banner.webp"
+                        alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah"></a>
+            </div>
+            <div class="banner-item">
+                <a href="#"><img src="/Assets/Home-Banner/banner2.webp"
+                        alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah"></a>
+            </div>
+            <div class="banner-item">
+                <a href="#"><img src="/Assets/Home-Banner/banner3.webp"
+                        alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah"></a>
+            </div>
+            <!-- Add more carousel items as needed -->
+        </div>
 
-        <!-- Product Items -->
+        <ul class="banner-indicators">
+            <li class="indicator active" onclick="goToSlide(0)"></li>
+            <li class="indicator" onclick="goToSlide(1)"></li>
+            <li class="indicator" onclick="goToSlide(2)"></li>
+            <!-- Add more indicators as needed -->
+        </ul>
+
+        <div class="banner-controls">
+            <button class="banner-control" onclick="prevSlide()">&#8249;</button>
+            <button class="banner-control" onclick="nextSlide()">&#8250;</button>
+        </div>
+    </div>
+
+    <!-- Carousel Produk Populer -->
+    <div class="container">
         <div class="row">
             <div class="col-md-4">
                 <div class="product-item">
