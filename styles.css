@@ -334,8 +334,8 @@ body {
     width: 70%;
 }
 
-.review-us b{
-    font-weight: bold; 
+.review-us b {
+    font-weight: bold;
     color: #A73938;
 }
 
@@ -417,36 +417,36 @@ body {
 }
 
 /* FAQ CSS */
-.faq-header{
+.faq-header {
     font-size: 30px;
     font-weight: bold;
     color: #A73938;
     padding: 24px;
     text-align: center;
-  }
+}
 
-  .faq-h2{
+.faq-h2 {
     font-size: 30px;
     font-weight: bold;
     color: #A73938;
     padding: 24px;
     text-align: le;
-  }
-  
-  .faq-content {
+}
+
+.faq-content {
     max-width: 100%;
     max-height: auto;
     text-align: left;
     margin: auto;
     width: 70%;
-  }
-  
-  .faq-question {
+}
+
+.faq-question {
     padding: 20px 0;
     border-bottom: 1px dotted #ccc;
-  }
-  
-  .panel-title {
+}
+
+.panel-title {
     font-size: 18px;
     width: 100%;
     position: relative;
@@ -455,9 +455,9 @@ body {
     display: block;
     cursor: pointer;
     font-weight: bold;
-  }
-  
-  .panel-content {
+}
+
+.panel-content {
     font-size: 16px;
     padding: 0px 14px;
     margin: 0 40px;
@@ -470,15 +470,15 @@ body {
     -moz-transition: .4s ease;
     -o-transition: .4s ease;
     transition: .4s ease;
-  }
-  
-  .panel:checked ~ .panel-content{
+}
+
+.panel:checked~.panel-content {
     height: auto;
     opacity: 1;
     padding: 14px;
-  }
-  
-  .plus {
+}
+
+.plus {
     position: absolute;
     color: #A73938;
     margin-left: 20px;
@@ -486,7 +486,7 @@ body {
     z-index: 5;
     font-size: 42px;
     line-height: 100%;
-    -webkit-user-select: none;    
+    -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     -o-user-select: none;
@@ -495,15 +495,37 @@ body {
     -moz-transition: .2s ease;
     -o-transition: .2s ease;
     transition: .2s ease;
-  }
-  
-  .panel:checked ~ .plus {
+}
+
+.panel:checked~.plus {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
-  }
-  
-  .panel {
+}
+
+.panel {
     display: none;
-  }
+}
+
+/* FOR DETAIL PRODUCTS */
+.product-list-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.product-title b {
+    font-weight: bold;
+    color: #A73938;
+}
+
+.product-item {
+    margin-bottom: 20px;
+}
+
+.product-img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
