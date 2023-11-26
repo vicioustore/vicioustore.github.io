@@ -60,6 +60,7 @@ body {
         margin-top: 18px;
         border-radius: 5px;
     }
+    
 }
 
 
@@ -545,10 +546,9 @@ body {
 }
 
 .kontainerproduk {
-    display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    margin: 30px;
+    margin: 10px;
 }
 
 .item {
