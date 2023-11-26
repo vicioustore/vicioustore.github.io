@@ -62,6 +62,7 @@ body {
     }
 }
 
+
 /* Homepage Banner CSS */
 .banner {
     position: relative;
@@ -268,21 +269,6 @@ body {
 
 .carousel-control-next i {
     margin-right: -3px;
-}
-
-.carousel .item-price {
-    font-size: 13px;
-    padding: 2px 0;
-}
-
-.carousel .item-price strike {
-    color: #999;
-    margin-right: 5px;
-}
-
-.carousel .item-price span {
-    color: #86bd57;
-    font-size: 110%;
 }
 
 .carousel .normal-price span {
@@ -528,4 +514,54 @@ body {
     max-width: 100%;
     height: auto;
     cursor: pointer;
+}
+
+/* FOR PRODUCT LIST */
+.produkbanner {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.produkbanner h5 {
+    text-align: center;
+    font-weight: bold;
+    color: #A73938;
+}
+
+.produklist {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.item a {
+    color: black;
+    text-decoration: none;
+}
+
+.kontainerproduk {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 30px;
+}
+
+.item {
+    min-width: 200px;
+    text-align: center;
+    height: 70px;
+    margin: 10px;
+    border-style: solid;
+    border-color: #A73938;
+    border-radius: 15px;
+}
+
+.item h5 {
+    font-weight: bold;
+    margin: 5px;
 }
