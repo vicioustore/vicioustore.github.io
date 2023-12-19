@@ -69,34 +69,8 @@ if (isset($_SESSION['ad']) && $_SESSION['ad'] != "") {
         </select>
       </div>
       <div class="input-group" style="margin-bottom:10px">
-        <span class="input-group-addon"><i class="fa fa-key"></i> Category</span>
-        <select name="jenis" class="form-control">
-          <?php
-          $query = mysqli_query($conn, "Select * from tbljenis");
-
-          while ($data = mysqli_fetch_array($query, MYSQLI_ASSOC)) {
-            ?>
-            <option value="<?php echo $data['idjenis']; ?>">
-              <?php echo $data['jenisbarang']; ?>
-            </option>
-            <?php
-          }
-          ?>
-        </select>
-      </div>
-      <div class="input-group" style="margin-bottom:10px">
         <span class="input-group-addon"><i class="fa fa-money"></i> Price</span>
         <input id="harga" type="number" class="form-control" name="harga" required placeholder="Enter product price">
-      </div>
-      <div class="input-group" style="margin-bottom:10px">
-        <span class="input-group-addon"><i class="fa fa-info-circle"></i> Description</span>
-        <textarea id="desc" style="resize:vertical;" class="form-control" required name="desc"
-          placeholder="Enter product description"></textarea>
-      </div>
-      <div class="input-group" style="margin-bottom:10px">
-        <span class="input-group-addon"><i class="fa fa-info-circle"></i> Specification</span>
-        <textarea id="spec" style="resize:vertical;" class="form-control" required name="spec"
-          placeholder="Enter product specification"></textarea>
       </div>
       <div class="input-group" style="margin-bottom:10px">
         <span class="input-group-addon"><i class="fa fa-image"></i> Product Image</span>
