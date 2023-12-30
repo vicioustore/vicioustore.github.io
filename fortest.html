@@ -53,50 +53,513 @@
         </nav>
     </div>
 
-    <!-- content goes here -->
-    <div class="card mb-3 produkbanner">
-        <img src="Assets/Products/Youtube Premium/Youtube-FrontProduct.svg" class="card-img-top"
-            alt="Youtube Premium Murah Vicioustore">
-        <div class="card-body">
-            <p class="card-text">Temukan pengalaman menonton yang tak tertandingi dengan YouTube Premium murah dari
-                Vicioustore. Dapatkan keuntungan dari layanan tanpa iklan, putar video offline, dan berbagai fitur
-                premium
-                lainnya tanpa menguras biaya. Vicioustore memberikan akses cepat dan aman ke langganan YouTube
-                Premium dengan harga bersaing. Pilih Vicioustore untuk solusi hiburan Anda yang terjangkau dan
-                berkualitas. Pesan sekarang dan tingkatkan pengalaman
-                menonton Anda!</p>
+    <!-- Homepage Banner -->
+    <div class="banner">
+        <div class="banner-inner">
+            <div class="banner-item">
+                <a href="#"><img src="./Assets/Home-Banner/banner.png"
+                        alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah"></a>
+            </div>
+            <div class="banner-item">
+                <a href="#"><img src="./Assets/Home-Banner/banner2.png"
+                        alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah"></a>
+            </div>
+            <div class="banner-item">
+                <a href="#"><img src="./Assets/Home-Banner/banner3.png"
+                        alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah"></a>
+            </div>
+            <!-- Add more carousel items as needed -->
+        </div>
+
+        <ul class="banner-indicators">
+            <li class="indicator active" onclick="goToSlide(0)"></li>
+            <li class="indicator" onclick="goToSlide(1)"></li>
+            <li class="indicator" onclick="goToSlide(2)"></li>
+            <!-- Add more indicators as needed -->
+        </ul>
+
+        <div class="banner-controls">
+            <button class="banner-control" onclick="prevSlide()">&#8249;</button>
+            <button class="banner-control" onclick="nextSlide()">&#8250;</button>
         </div>
     </div>
 
-    <div class="card mb-3 produkbanner">
-        <div class="card-body">
-            <h5 class="card-title">Syarat dan Ketentuan</h5>
-            <p class="card-text">
-                <li>Harga yang tertera di Vicioustore bisa saja berubah sewaktu-waktu tanpa sepengetahuan anda.</li>
-                <li>Akun yang digunakan adalah akun anda sendiri.</li>
-                <li>Vicioustore tidak akan pernah meminta password akun anda.</li>
-            </p>
-        </div>
-    </div>
-
-    <section class="card mb-3 produklist">
-        <div class="container-wrapper">
-            <div class="kontainerproduk">
-                <div class="item">
-                    <h5>Premium 1 Bulan</h5>
-                    <p>RP. 30.000</p>
-                </div>
-                <div class="item">
-                    <h5>Premium 2 Bulan</h5>
-                    <p>RP. 53.000</p>
-                </div>
-                <div class="item">
-                    <h5>Premium 3 Bulan</h5>
-                    <p>RP. 76.000</p>
+    <!-- Carousel Produk Populer -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Produk &nbsp;<b>Populer</b></h2>
+                <div id="myCarousel1" class="carousel slide" data-ride="carousel" data-interval="0">
+                    <!-- Wrapper for carousel items -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="./Assets/Products/Mobile Legends/ML-277D.png" class="img-fluid"
+                                                alt="Top Up Mobile Legends Murah">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>305 Diamonds</h4>
+                                            <a href="coming-soon.html" class="short-link">
+                                                <p>Mobile Legends</p>
+                                            </a>
+                                            <p class="normal-price"><span>RP 83.500</span></p>
+                                            <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="./Assets/Products/Youtube Premium/Youtube.png" class="img-fluid"
+                                                alt="Youtube Premium Murah">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Premium - 1 Bulan</h4>
+                                            <a href="prod-youtube.html" class="short-link">
+                                                <p>Youtube</p>
+                                            </a>
+                                            <p class="normal-price"><span>RP 30.000</span>
+                                            </p>
+                                            <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="./Assets/Products/Netflix/Netflix.png" class="img-fluid"
+                                                alt="Netflix Sharing murah">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Sharing - 1 Bulan</h4>
+                                            <a href="prod-netflixshare.html" class="short-link">
+                                                <p>Netflix Sharing</p>
+                                            </a>
+                                            <p class="normal-price"><span>RP 14.500</span></p>
+                                            <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="./Assets/Products/Spotify/Spotify.png" class="img-fluid"
+                                                alt="Spotify Premium Murah">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Premium - 1 Bulan</h4>
+                                            <a href="prod-spotify.html" class="short-link">
+                                                <p>Spotify</p>
+                                            </a>
+                                            <p class="normal-price"><span>RP 22.500</span></p>
+                                            <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="./Assets/Products/Netflix/Netflix.png" class="img-fluid"
+                                                alt="Netflix Private Murah">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Private - 2 Bulan</h4>
+                                            <a href="prod-netflixprivate.html" class="short-link">
+                                                <p>Netflix Private</p>
+                                            </a>
+                                            <p class="normal-price"><span>RP 107.000</span>
+                                            </p>
+                                            <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="./Assets/Products/Valorant/VAL-2400Points.svg" class="img-fluid"
+                                                alt="Top Up Valorant Point Murah">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>2400 Points</h4>
+                                            <a href="coming-soon.html" class="short-link">
+                                                <p>Valorant</p>
+                                            </a>
+                                            <p class="normal-price"><span>RP 236.000</span>
+                                            </p>
+                                            <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="./Assets/Products/Genshin Impact/GI-Welkin1x.svg"
+                                                class="img-fluid" alt="Top Up Genshin Impact Murah">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Welkin 1X</h4>
+                                            <a href="coming-soon.html" class="short-link">
+                                                <p>Genshin Impact</p>
+                                            </a>
+                                            <p class="normal-price"><span>RP 62.000</span>
+                                            </p>
+                                            <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="./Assets/Products/Disney/DisneyPlus.png" class="img-fluid"
+                                                alt="Disney Plus Murah">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Profile 2 Bulan</h4>
+                                            <a href="prod-disney.html" class="short-link">
+                                                <p>Disney</p>
+                                            </a>
+                                            <p class="normal-price"><span>RP 25.000</span></p>
+                                            </p>
+                                            <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel controls -->
+                    <a class="carousel-control-prev" href="#myCarousel1" data-slide="prev">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel1" data-slide="next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Carousel Produk Baru -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Produk &nbsp;<b>Baru</b></h2>
+                <div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="0">
+                    <!-- Wrapper for carousel items -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="./Assets/Products/Mobile Legends/ML-277D.png" class="img-fluid"
+                                                alt="Top Up Mobile Legends Murah">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>304 Diamonds</h4>
+                                            <a href="coming-soon.html" class="short-link">
+                                                <p>Mobile Legends</p>
+                                            </a>
+                                            <p class="normal-price"><span>RP 78.000</span></p>
+                                            <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="./Assets/Products/Genshin Impact/GI-Welkin1x.svg"
+                                                class="img-fluid" alt="Top Up Genshin Impact Murah">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Welkin 1X</h4>
+                                            <a href="coming-soon.html" class="short-link">
+                                                <p>Genshin Impact</p>
+                                            </a>
+                                            <p class="normal-price"><span>RP 62.000</span>
+                                            </p>
+                                            <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="./Assets/Products/Genshin Impact/GI-Welkin3x.svg"
+                                                class="img-fluid" alt="Top Up Genshin Impact Murah">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Welkin 3x</h4>
+                                            <a href="coming-soon.html" class="short-link">
+                                                <p>Genshin Impact</p>
+                                            </a>
+                                            <p class="normal-price"><span>RP 180.000</span></p>
+                                            <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="./Assets/Products/Genshin Impact/GI-330GC.svg" class="img-fluid"
+                                                alt="Top Up Genshin Impact Murah">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>330 Crystal</h4>
+                                            <a href="coming-soon.html" class="short-link">
+                                                <p>Genshin Impact</p>
+                                            </a>
+                                            <p class="normal-price"><span>RP 65.000</span></p>
+                                            <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="./Assets/Products/Genshin Impact/GI-1090GC.svg" class="img-fluid"
+                                                alt="Top Up Genshin Impact Murah">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>1090 Crystal</h4>
+                                            <a href="coming-soon.html" class="short-link">
+                                                <p>Genshin Impact</p>
+                                            </a>
+                                            <p class="normal-price"><span>RP 180.000</span>
+                                            </p>
+                                            <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="./Assets/Products/Genshin Impact/GI-2240GC.svg" class="img-fluid"
+                                                alt="Top Up Genshin Impact Murah">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>2240 Crystal</h4>
+                                            <a href="coming-soon.html" class="short-link">
+                                                <p>Genshin Impact</p>
+                                            </a>
+                                            <p class="normal-price"><span>RP 390.000</span>
+                                            </p>
+                                            <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="./Assets/Products/Genshin Impact/GI-3880GC.svg" class="img-fluid"
+                                                alt="Top Up Genshin Impact Murah">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>3880 Crystal</h4>
+                                            <a href="coming-soon.html" class="short-link">
+                                                <p>Genshin Impact</p>
+                                            </a>
+                                            <p class="normal-price"><span>RP 600.000</span>
+                                            </p>
+                                            <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="./Assets/Products/Genshin Impact/GI-8080GC.svg" class="img-fluid"
+                                                alt="Top Up Genshin Impact Murah">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>8080 Crystal</h4>
+                                            <a href="coming-soon.html" class="short-link">
+                                                <p>Genshin Impact</p>
+                                            </a>
+                                            <p class="normal-price"><span>RP 1.200.000</span></p>
+                                            </p>
+                                            <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel controls -->
+                    <a class="carousel-control-prev" href="#myCarousel2" data-slide="prev">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel2" data-slide="next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Kenapa Vicioustre -->
+    <div class="why-us">
+        <section class="d-flex bg-light" id="feature-cards">
+            <div class="container d-flex justify-content-center">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-12 align-self-center">
+                        <div class="row">
+                            <div class="col-12 col-lg-7 mx-auto text-center">
+                                <h2 class="display-4">Kenapa <b>Vicioustore?</b></h2>
+                                <p class="text-muted lead mb-5">Vicioustore, tujuan utama Anda untuk hiburan premium
+                                    dengan
+                                    harga yang tak terkalahkan! Temukan langganan
+                                    yang terjangkau dengan Vicioustore - menawarkan <b>Netflix, YouTube Premium, Spotify
+                                        Premium, dan Disney Plus</b> dengan tarif yang ramah di kantong.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-3">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col mx-auto text-center">
+                                                <img src="./Assets/Why-Us/super-fast.svg">
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-12 text-center">
+                                                <p class="why-us-title">Proses Super Cepat</p>
+                                                <p>Kami menyediakan proses super cepat dengan
+                                                    waktu
+                                                    proses yang hampir instan untuk semua transaksi
+                                                    Anda.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col mx-auto text-center">
+                                                <img src="./Assets/Why-Us/safe.svg">
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-12 text-center">
+                                                <p class="why-us-title">100% Legal & Aman</p>
+                                                <p>Produk-produk kami dijamin 100% legal dan
+                                                    aman,
+                                                    menjamin pengalaman yang aman bagi pelanggan kami.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col mx-auto text-center">
+                                                <img src="./Assets/Why-Us/24h.svg">
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-12 text-center">
+                                                <p class="why-us-title">24/7 Selalu Siap Melayani</p>
+                                                <p>Website dan dukungan pelanggan kami aktif 24/7
+                                                    untuk membantu Anda dengan pertanyaan anda.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col mx-auto text-center">
+                                                <img src="./Assets/Why-Us/no-extra-fee.svg">
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-12 text-center">
+                                                <p class="why-us-title">Tidak Ada Biaya Tambahan</p>
+                                                <p>Kami percaya pada transparansi dan kejujuran.
+                                                    Tidak ada biaya tersembunyi / biaya tambahan.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Google Review -->
+    <section class="review-us">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <!-- Carousel wrapper -->
+                <div id="carouselBasicExample1" class="carousel slide carousel-dark" data-mdb-ride="carousel">
+                    <!-- Inner -->
+                    <div class="carousel-inner">
+                        <!-- Single item -->
+                        <div class="carousel-item active">
+                            <p class="lead font-italic mx-4 mx-md-5">
+                                "Udah setahun langganan disini, <b>lancar terus dan masih stabil harganya paling
+                                    murah</b> mantappp !!!"
+                            </p>
+                            <p class="text-muted mb-0">- <b>Anggaaa</b></p>
+                        </div>
+
+                        <!-- Single item -->
+                        <div class="carousel-item">
+                            <p class="lead font-italic mx-4 mx-md-5">
+                                "<b>Cepet banget responnya dan helpful</b> banget adminny👍🏼"
+                            </p>
+                            <p class="text-muted mb-0">- <b>Nina Hwang</b></p>
+                        </div>
+
+                        <!-- Single item -->
+                        <div class="carousel-item">
+                            <br>
+                            <p class="lead font-italic mx-4 mx-md-5">
+                                "Adminnya <b>ramah , fast respons, pelayanan terbaik</b>. Sukses selalu Viciousstore."
+                            </p>
+                            <p class="text-muted mb-0">- <b>Lois Ivana Angela</b></p>
+                        </div>
+                    </div>
+                    <!-- Inner -->
+
+                    <!-- Controls -->
+                    <a class="carousel-control-prev" href="#carouselBasicExample1" role="button" data-slide="prev"
+                        style="top: -30%; ">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselBasicExample1" role="button" data-slide="next"
+                        style="top: -30%;">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only"></span>
+                    </a>
+                </div>
+                <!-- Carousel wrapper -->
+            </div>
+        </div>
     </section>
+
 
     <!-- Footer -->
     <footer class="text-center text-lg-start text-muted footer-background">
@@ -111,23 +574,24 @@
             <!-- Right -->
             <div>
                 <a href="https://wa.me/6287887055203" target="_blank" class="me-4 link-secondary footer-follow">
-                    <img src="/Assets/Footer/WA.svg"
+                    <img src="./Assets/Footer/WA.svg"
+                        alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah">
+                </a>
+                <a href="https://www.google.com/search?q=vicioustore&rlz=1C1UEAD_enID1090ID1090&oq=vicioustore+&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQIxgnMgYIAhBFGDwyBggDEEUYPDIGCAQQRRhBMgYIBRBFGEEyBggGEEUYQTIGCAcQRRg80gEIMTY5NmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8"
+                    class="me-4 link-secondary footer-follow">
+                    <img src="./Assets/Footer/google.svg"
+                        alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah">
+                </a>
+                <a href="https://twitter.com/vicioustoree" class="me-4 link-secondary footer-follow">
+                    <img src="./Assets/Footer/x.svg"
+                        alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah">
+                </a>
+                <a href="https://www.facebook.com/vicioustore.shop" class="me-4 link-secondary footer-follow">
+                    <img src="./Assets/Footer/fb.svg"
                         alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah">
                 </a>
                 <a href="" class="me-4 link-secondary footer-follow">
-                    <img src="/Assets/Footer/google.svg"
-                        alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah">
-                </a>
-                <a href="" class="me-4 link-secondary footer-follow">
-                    <img src="/Assets/Footer/x.svg"
-                        alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah">
-                </a>
-                <a href="" class="me-4 link-secondary footer-follow">
-                    <img src="/Assets/Footer/fb.svg"
-                        alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah">
-                </a>
-                <a href="" class="me-4 link-secondary footer-follow">
-                    <img src="/Assets/Footer/tiktok.svg"
+                    <img src="./Assets/Footer/tiktok.svg"
                         alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah">
                 </a>
             </div>
@@ -144,7 +608,7 @@
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <!-- Content -->
                         <h6 class="text-uppercase fw-bold mb-4">
-                            <img src="/Assets/Logo-Full.png"
+                            <img src="./Assets/Logo-Full.png"
                                 alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah"
                                 style="width: 200px;">
                         </h6>
@@ -162,19 +626,19 @@
                             Produk Media & Streaming
                         </h6>
                         <p>
-                            <a href="#!" class="text-reset">Youtube Premium</a>
+                            <a href="prod-youtube.html" class="text-reset">Youtube Premium</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Netflix Private</a>
+                            <a href="prod-netflixprivate.html" class="text-reset">Netflix Private</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Netflix Sharing</a>
+                            <a href="prod-netflixshare.html" class="text-reset">Netflix Sharing</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Spotify</a>
+                            <a href="prod-spotify.html" class="text-reset">Spotify</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Disney Plus</a>
+                            <a href="prod-disney.html" class="text-reset">Disney Plus</a>
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -186,13 +650,13 @@
                             Produk Top Up Game
                         </h6>
                         <p>
-                            <a href="#!" class="text-reset">Mobile Legends</a>
+                            <a href="coming-soon.html" class="text-reset">Mobile Legends</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Genshin Impact</a>
+                            <a href="coming-soon.html" class="text-reset">Genshin Impact</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Valorant</a>
+                            <a href="coming-soon.html" class="text-reset">Valorant</a>
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -202,12 +666,12 @@
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">Hubungi Kami</h6>
                         <p style="display: inline;">
-                            <img src="/Assets/Footer/mail.svg"
+                            <img src="./Assets/Footer/mail.svg"
                                 alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah"
                                 style="width: 30px; height: auto;">
                             vicioustore96@gmail.com
                         </p>
-                        <p style="margin: 20px;"><img src="/Assets/Footer/WA.svg"
+                        <p style="margin: 20px;"><img src="./Assets/Footer/WA.svg"
                                 alt="Vicioustore | Layanan Streaming Media Premium & Top Up Game Super Murah"
                                 style="width: 30px; height: auto;"> +62878-8705-5203</p>
                     </div>
@@ -228,7 +692,40 @@
 
     <!-- FOR SCRIPT CODES -->
     <script>
+        // SCRIPT FOR HOMEPAGE BANNER
+        let currentIndex = 0;
 
+        function nextSlide() {
+            const carouselInner = document.querySelector('.banner-inner');
+            const totalSlides = document.querySelectorAll('.banner-item').length;
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateCarousel();
+        }
+
+        function prevSlide() {
+            const carouselInner = document.querySelector('.banner-inner');
+            const totalSlides = document.querySelectorAll('.banner-item').length;
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        }
+
+        function goToSlide(index) {
+            currentIndex = index;
+            updateCarousel();
+        }
+
+        function updateCarousel() {
+            const carouselInner = document.querySelector('.banner-inner');
+            const totalSlides = document.querySelectorAll('.banner-item').length;
+            const translateValue = -currentIndex * 100 + '%';
+            carouselInner.style.transform = 'translateX(' + translateValue + ')';
+
+            // Update indicators
+            const indicators = document.querySelectorAll('.indicator');
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentIndex);
+            });
+        }
     </script>
 
 </body>
